@@ -11,7 +11,6 @@ export default mergeConfig(
         provider: "istanbul",
       },
       globals: true,
-
       environment: "jsdom",
     },
   })

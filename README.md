@@ -2,6 +2,8 @@
 
 This Vite template provides a streamlined and professional starting point for web development projects. It includes pre-configured essential tools, a testing setup, and uniform conventional commits to help you maintain a consistent commit history. Get started quickly and easily with this template and focus on building great products.
 
+> **✨** Looking out for template with Rome configuration instead? [Vite Rome](https://github.com/naqibhishamuddin/vite-rome)
+
 ## What's inside? 📦
 
 - [React 18](https://reactjs.org/)

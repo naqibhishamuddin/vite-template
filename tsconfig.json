@@ -18,6 +18,6 @@
     "baseUrl": "src",
     "types": ["vitest/globals"]
   },
-  "include": ["src"],
+  "include": ["src", "tests", "mocks"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

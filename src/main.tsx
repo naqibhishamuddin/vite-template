@@ -4,11 +4,11 @@ import App from "./App";
 import "./index.css";
 
 if (process.env.NODE_ENV === "development") {
-  import("mocks");
+  import("../mocks");
 }
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

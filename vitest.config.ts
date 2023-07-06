@@ -1,17 +1,16 @@
-import { mergeConfig } from "vite";
 import { defineConfig } from "vitest/config";
-import viteConfig from "./vite.config";
+import react from "@vitejs/plugin-react-swc";
+import tsconfigPaths from "vite-tsconfig-paths";
 
-export default mergeConfig(
-  viteConfig,
-  defineConfig({
-    test: {
-      setupFiles: ["src/__tests__/setup.ts"],
-      coverage: {
-        provider: "istanbul",
-      },
-      globals: true,
-      environment: "jsdom",
+export default defineConfig({
+  plugins: [react(), tsconfigPaths()],
+
+  test: {
+    setupFiles: ["tests/setup.ts"],
+    coverage: {
+      provider: "istanbul",
     },
-  })
-);
+    globals: true,
+    environment: "jsdom",
+  },
+});
